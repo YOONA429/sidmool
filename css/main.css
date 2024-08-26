@@ -4,7 +4,6 @@ header .login{
     width: 100%; height: 31px;
     background-color: #98BB67;
     position: absolute;
-    top: 34px;
 }
 header .login .login_txt{
     position: absolute;
@@ -13,8 +12,7 @@ header .login .login_txt{
     font-size: 13px;
     font-weight: 300;
 }
-
-header .login .login_txt li{
+header .login .login_txt li a{
 color: #ffffff;
 }
 
@@ -22,6 +20,7 @@ header .login .login_txt li::after{
     content: '|';
     margin-right: 10px;
     padding-left: 10px;
+    color: #ffffff;
 }
 header .login .login_txt li:last-child::after{
     content: '';
@@ -55,7 +54,7 @@ header .logo .util img{
 }
 header .logo .util p{
     font-size: 13px;
-    line-height: 1px;
+    line-height: 1.2em;
 }
 header nav{}
 header nav .allmenu{
@@ -147,11 +146,13 @@ main .mv .mvTxt{
 main .mv .mvTxt1{
     color: #ffffff;
     font-size: 30px;
+    margin-bottom: 29px;
 }
 main .mv .mvTxt2{
     font-weight: 300;
 font-size:  45px;
-line-height: 1.3em;
+line-height: 1.1em;
+margin-bottom: 25px;
 }
 main .mv .mvTxt2 span{
     font-weight: bold;
@@ -170,6 +171,7 @@ main .mv .mvTxt3{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
 }
 .container .newItem>p{
     text-align: center;
@@ -197,11 +199,11 @@ main .mv .mvTxt3{
 .container .newItem ul li .new_img:hover img{
     transform: scale(1.1);
 }
-.container .newItem ul li .new_txt{
+.container .newItem ul li .new_txt{}
 
-}
 .container .newItem ul li .new_txt .inBox{
     display: flex;
+    margin: 7px 0 7px 0;
 }
 .container .newItem ul li .new_txt .inBox p{
     border: 1px solid #98BB67;
@@ -209,18 +211,25 @@ main .mv .mvTxt3{
     padding: 3px;
     border-radius: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
     font-size: 12px;
 }
 .container .newItem ul li .new_txt .grayTxt{
     font-size: 12px;
     color: #777777;
     margin-top: -5px;
+    margin-bottom: 10px;
 }
 .container .newItem ul li .new_txt p{
-    font-size: 15px;
+    font-size: 15px; 
+}
+.container .newItem ul li .new_txt .newTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
 }
 .container .newItem ul li .new_txt p span{
-    font-size: 20px; font-weight: 700;
+    font-size: 20px; font-weight: 600;
 }
 .container .newItem ul li .new_sale{
     display: flex;
@@ -244,7 +253,7 @@ main .mv .mvTxt3{
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: -325px;
+    top: -280px;
     margin: 0 13% 0 13%;
 }
 /* ----------- newItem --------------- */
@@ -253,6 +262,7 @@ main .mv .mvTxt3{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
 }
 .container .bestItem>p{
     text-align: center;
@@ -283,6 +293,7 @@ main .mv .mvTxt3{
 .container .bestItem ul li .best_txt{}
 .container .bestItem ul li .best_txt .inBox{
     display: flex;
+    margin: 7px 0 7px 0;
 }
 .container .bestItem ul li .best_txt .inBox p{
     border: 1px solid #98BB67;
@@ -291,14 +302,21 @@ main .mv .mvTxt3{
     border-radius: 5px;
     margin-right: 5px;
     font-size: 12px;
+    margin-bottom: 5px;
 }
 .container .bestItem ul li .best_txt .grayTxt{
     font-size: 12px;
     color: #777777;
     margin-top: -5px;
+    margin-bottom: 10px;
 }
 .container .bestItem ul li .best_txt p{
     font-size: 15px;
+}
+.container .bestItem ul li .best_txt .bestTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
 }
 .container .bestItem ul li .best_txt p span{
     font-size: 20px; font-weight: 700;
@@ -324,7 +342,7 @@ main .mv .mvTxt3{
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: -325px;
+    top: -280px;
     margin: 0 13% 0 13%;
 }
 /* ------- bestItem -------- */
@@ -379,23 +397,24 @@ main .mv .mvTxt3{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
 }
 .search .searchTit>P{
     text-align: center;
     font-size: 18px;
     font-weight: 300;
     padding-bottom: 67px;
+    line-height: 1.1em;
 }
 .search .searchTxt{
     display: flex;
-flex-flow: column nowrap; 
+    flex-flow: column nowrap; 
 }
 .search .searchTxt ul{
     display: flex;
     justify-content: center;
 }
 .search .searchTxt ul li{
-
     border: 1px solid #000;
     padding: 5px 20px 5px 20px;
     border-radius: 50px;
@@ -438,6 +457,7 @@ flex-flow: column nowrap;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
 }
 .container .eventItem>p{
     text-align: center;
@@ -469,6 +489,7 @@ flex-flow: column nowrap;
 .container .eventItem ul li .event_txt{}
 .container .eventItem ul li .event_txt .inBox{
     display: flex;
+    margin: 7px 0 7px 0;
 }
 .container .eventItem ul li .event_txt .inBox p{
     border: 1px solid #98BB67;
@@ -476,15 +497,22 @@ flex-flow: column nowrap;
     padding: 3px;
     border-radius: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
     font-size: 12px;
 }
 .container .eventItem ul li .event_txt .grayTxt{
     font-size: 12px;
     color: #777777;
     margin-top: -5px;
+    margin-bottom: 10px;
 }
 .container .eventItem ul li .event_txt p{
     font-size: 15px;
+}
+.container .eventItem ul li .event_txt .eventTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
 }
 .container .eventItem ul li .event_txt p span{
     font-size: 20px; font-weight: 700;
@@ -510,7 +538,7 @@ flex-flow: column nowrap;
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: -325px;
+    top: -280px;
     margin: 0 13% 0 13%;
 }
 /* ---------EVENT ITEM------- */
@@ -521,6 +549,7 @@ flex-flow: column nowrap;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
 }
 .photoReview_wrap p{
     text-align: center;
@@ -566,23 +595,28 @@ flex-flow: column nowrap;
     overflow: hidden; /* 넘치는 텍스트를 숨김 */
     text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
     width: 100%;
+    margin-bottom: 12px;
 
 }
 .photoReview_wrap .pReview li .revTxt .revTxt_gray{
     font-size: 14px;
     font-weight: 300;
     display: -webkit-box; /* Flexbox와 비슷하지만 텍스트 생략을 위해 사용 */
--webkit-line-clamp: 4; /* 3줄까지만 표시 */
--webkit-box-orient: vertical; /* 세로 방향으로 박스 정렬 */
-overflow: hidden; /* 넘치는 텍스트를 숨김 */
-text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+    -webkit-line-clamp: 4; /* 3줄까지만 표시 */
+    -webkit-box-orient: vertical; /* 세로 방향으로 박스 정렬 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+    color: #777777;
+    line-height: 1.4em;
 }
 .photoReview_wrap .pReview li .revTxt .id{
     font-size: 13px;
+    font-weight: 500;
     white-space: nowrap;
     overflow: hidden; /* 넘치는 텍스트를 숨김 */
     text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
     width: 100%;
+    margin-top: 10px;
 }
 .photoReview_wrap .button{
     position: relative;
@@ -607,7 +641,7 @@ text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
     position: absolute;
     font-size: 16px;
     text-align: center;
-    top: 40%; left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: -2%;
     
@@ -655,10 +689,12 @@ text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
 .btnWrap .box .btnTxt h3{
     font-size: 18px;
     font-weight: 800;
+    margin-bottom: 10px;
 }
 .btnWrap .box .btnTxt p{
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.2em;
 }
 
 #footer{
