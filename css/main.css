@@ -64,13 +64,14 @@ header nav .allmenu{
     position: absolute;
     left: 10%;
     display: block;
-    transition: all 0.6s ease-in;
+    
 }
 header nav .allmenu span{
     position: absolute;
     width: 28px; height: 2px;
     background-color: #98BB67;
     z-index: 100;
+    transition: all 0.3s ease-in-out;
 }
 header nav .allmenu span:nth-child(1){top: 0;}
 header nav .allmenu span:nth-child(2){top: 8px;}
@@ -104,6 +105,11 @@ header nav .gnb1{
     position: absolute;
     left: 13%; bottom: 20px;
 }
+header nav .gnb1 li:hover a{
+    font-weight: 700;
+    color: #3A7714;
+}
+
 header nav .gnb1 li{
     margin-left: 15px;
 }
@@ -118,6 +124,10 @@ header nav .gnb2{
 }
 header nav .gnb2 li{
     margin-right: 15px;
+}
+header nav .gnb2 li:hover a{
+    font-weight: 700;
+    color: #3A7714;
 }
 header nav .gnb2 li:last-child{
     margin-right: 0;
@@ -182,6 +192,10 @@ main .mv .mvTxt3{
 }
 .container .newItem ul li .new_img img{
     width: 100%; height: auto;
+    transition: all 0.3s;
+}
+.container .newItem ul li .new_img:hover img{
+    transform: scale(1.1);
 }
 .container .newItem ul li .new_txt{
 
@@ -261,6 +275,10 @@ main .mv .mvTxt3{
 }
 .container .bestItem ul li .best_img img{
     width: 100%; height: auto;
+    transition: all 0.3s;
+}
+.container .bestItem ul li .best_img:hover img{
+    transform: scale(1.1);
 }
 .container .bestItem ul li .best_txt{}
 .container .bestItem ul li .best_txt .inBox{
@@ -314,8 +332,8 @@ main .mv .mvTxt3{
 .eventBn1{
     display: flex;
     justify-content: center;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin-top: 140px;
+    margin-bottom: 140px;
     
 }
 .eventBn1 div img{
@@ -398,8 +416,8 @@ flex-flow: column nowrap;
 .eventBn2{
     display: flex;
     justify-content: center;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin-top: 140px;
+    margin-bottom: 140px;
     
 }
 .eventBn2 div img{
@@ -437,11 +455,16 @@ flex-flow: column nowrap;
     overflow: hidden;
     border-radius: 20px;
 }
+
 .container .eventItem ul li:first-child .event_img{
     margin-left: 0;
 }
 .container .eventItem ul li .event_img img{
     width: 100%; height: auto;
+    transition: all 0.3s;
+}
+.container .eventItem ul li .event_img img:hover{
+    transform: scale(1.05);
 }
 .container .eventItem ul li .event_txt{}
 .container .eventItem ul li .event_txt .inBox{
@@ -604,11 +627,16 @@ text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
 }
 .btnWrap .box{
     width: 305px; height: 110px;
-    border: 1px solid #999999;
+    border: 1px solid #eeeeee;
     box-sizing: border-box;
     padding: 15px 20px;
     margin-right: 20px;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.btnWrap .box:hover{
+    background-color: #F3FFE1;
+    border: 1px solid #F3FFE1;
 }
 .btnWrap .box:last-child{
     margin-right: 0;
@@ -662,7 +690,6 @@ text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
 #footer .ftBg_wrap .footer_menu1 .snsMenu>a img{
     width: auto; height: 30px; margin: 3px;
 }
-
 .footer_menu2{
     display: flex;
 justify-content: space-between;
