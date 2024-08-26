@@ -245,7 +245,7 @@ main .mv .mvTxt3{
     display: flex;
     justify-content: space-between;
     top: -325px;
-    margin: 0 280px 0 280px;
+    margin: 0 13% 0 13%;
 }
 /* ----------- newItem --------------- */
 .container .bestItem{margin-top: 160px;}
@@ -325,7 +325,7 @@ main .mv .mvTxt3{
     display: flex;
     justify-content: space-between;
     top: -325px;
-    margin: 0 280px 0 280px;
+    margin: 0 13% 0 13%;
 }
 /* ------- bestItem -------- */
 
@@ -511,7 +511,7 @@ flex-flow: column nowrap;
     display: flex;
     justify-content: space-between;
     top: -325px;
-    margin: 0 280px 0 280px;
+    margin: 0 13% 0 13%;
 }
 /* ---------EVENT ITEM------- */
 
@@ -589,7 +589,7 @@ text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
     display: flex;
     justify-content: space-between;
     top: -225px;
-    margin: 0 280px 0 280px;
+    margin: 0 13% 0 13%;
 }
 /* --------- photoreview --------- */
 
