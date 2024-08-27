@@ -4,7 +4,6 @@ header .login{
     width: 100%; height: 31px;
     background-color: #98BB67;
     position: absolute;
-    top: 34px;
 }
 header .login .login_txt{
     position: absolute;
@@ -13,8 +12,7 @@ header .login .login_txt{
     font-size: 13px;
     font-weight: 300;
 }
-
-header .login .login_txt li{
+header .login .login_txt li a{
 color: #ffffff;
 }
 
@@ -22,6 +20,7 @@ header .login .login_txt li::after{
     content: '|';
     margin-right: 10px;
     padding-left: 10px;
+    color: #ffffff;
 }
 header .login .login_txt li:last-child::after{
     content: '';
@@ -55,7 +54,7 @@ header .logo .util img{
 }
 header .logo .util p{
     font-size: 13px;
-    line-height: 1px;
+    line-height: 1.2em;
 }
 header nav{}
 header nav .allmenu{
@@ -64,13 +63,14 @@ header nav .allmenu{
     position: absolute;
     left: 10%;
     display: block;
-    transition: all 0.6s ease-in;
+    
 }
 header nav .allmenu span{
     position: absolute;
     width: 28px; height: 2px;
     background-color: #98BB67;
     z-index: 100;
+    transition: all 0.3s ease-in-out;
 }
 header nav .allmenu span:nth-child(1){top: 0;}
 header nav .allmenu span:nth-child(2){top: 8px;}
@@ -104,6 +104,11 @@ header nav .gnb1{
     position: absolute;
     left: 13%; bottom: 20px;
 }
+header nav .gnb1 li:hover a{
+    font-weight: 700;
+    color: #3A7714;
+}
+
 header nav .gnb1 li{
     margin-left: 15px;
 }
@@ -118,6 +123,10 @@ header nav .gnb2{
 }
 header nav .gnb2 li{
     margin-right: 15px;
+}
+header nav .gnb2 li:hover a{
+    font-weight: 700;
+    color: #3A7714;
 }
 header nav .gnb2 li:last-child{
     margin-right: 0;
@@ -137,11 +146,13 @@ main .mv .mvTxt{
 main .mv .mvTxt1{
     color: #ffffff;
     font-size: 30px;
+    margin-bottom: 29px;
 }
 main .mv .mvTxt2{
     font-weight: 300;
 font-size:  45px;
-line-height: 1.3em;
+line-height: 1.1em;
+margin-bottom: 25px;
 }
 main .mv .mvTxt2 span{
     font-weight: bold;
@@ -156,10 +167,16 @@ main .mv .mvTxt3{
 
 .container{}
 .container .newItem{margin-top: 160px;}
-.container .newItem h2{
+.container .newItem h2>a{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
+    display: block;
+    justify-content: center;
+}
+.container .newItem h2>a:hover{
+    color: #98BB67;
 }
 .container .newItem>p{
     text-align: center;
@@ -182,12 +199,16 @@ main .mv .mvTxt3{
 }
 .container .newItem ul li .new_img img{
     width: 100%; height: auto;
+    transition: all 0.3s;
 }
-.container .newItem ul li .new_txt{
+.container .newItem ul li .new_img:hover img{
+    transform: scale(1.1);
+}
+.container .newItem ul li .new_txt{}
 
-}
 .container .newItem ul li .new_txt .inBox{
     display: flex;
+    margin: 7px 0 7px 0;
 }
 .container .newItem ul li .new_txt .inBox p{
     border: 1px solid #98BB67;
@@ -195,18 +216,25 @@ main .mv .mvTxt3{
     padding: 3px;
     border-radius: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
     font-size: 12px;
 }
 .container .newItem ul li .new_txt .grayTxt{
     font-size: 12px;
     color: #777777;
     margin-top: -5px;
+    margin-bottom: 10px;
 }
 .container .newItem ul li .new_txt p{
-    font-size: 15px;
+    font-size: 15px; 
+}
+.container .newItem ul li .new_txt .newTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
 }
 .container .newItem ul li .new_txt p span{
-    font-size: 20px; font-weight: 700;
+    font-size: 20px; font-weight: 600;
 }
 .container .newItem ul li .new_sale{
     display: flex;
@@ -226,12 +254,26 @@ main .mv .mvTxt3{
     font-size: 16px; color: #777777;
     text-decoration-line: line-through;
 }
+.container .newItem .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -280px;
+}
+.container .newItem .button .left{margin-right: 680px;}
+.container .newItem .button .right{margin-left: 680px;}
 /* ----------- newItem --------------- */
 .container .bestItem{margin-top: 160px;}
-.container .bestItem h2{
+.container .bestItem h2 a{
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 28px;
+    display: block;
+    justify-content: center;
+}
+.container .bestItem h2 a:hover{
+    color: #98BB67;
 }
 .container .bestItem>p{
     text-align: center;
@@ -254,12 +296,15 @@ main .mv .mvTxt3{
 }
 .container .bestItem ul li .best_img img{
     width: 100%; height: auto;
+    transition: all 0.3s;
 }
-.container .bestItem ul li .best_txt{
-
+.container .bestItem ul li .best_img:hover img{
+    transform: scale(1.1);
 }
+.container .bestItem ul li .best_txt{}
 .container .bestItem ul li .best_txt .inBox{
     display: flex;
+    margin: 7px 0 7px 0;
 }
 .container .bestItem ul li .best_txt .inBox p{
     border: 1px solid #98BB67;
@@ -268,14 +313,21 @@ main .mv .mvTxt3{
     border-radius: 5px;
     margin-right: 5px;
     font-size: 12px;
+    margin-bottom: 5px;
 }
 .container .bestItem ul li .best_txt .grayTxt{
     font-size: 12px;
     color: #777777;
     margin-top: -5px;
+    margin-bottom: 10px;
 }
 .container .bestItem ul li .best_txt p{
     font-size: 15px;
+}
+.container .bestItem ul li .best_txt .bestTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
 }
 .container .bestItem ul li .best_txt p span{
     font-size: 20px; font-weight: 700;
@@ -297,12 +349,21 @@ main .mv .mvTxt3{
     font-size: 16px; color: #777777;
     text-decoration-line: line-through;
 }
+.container .bestItem .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -280px;
+}
+.container .bestItem .button .left{margin-right: 680px;}
+.container .bestItem .button .right{margin-left: 680px;}
 /* ------- bestItem -------- */
+
 .eventBn1{
     display: flex;
     justify-content: center;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin-top: 140px;
+    margin-bottom: 140px;
     
 }
 .eventBn1 div img{
@@ -332,5 +393,371 @@ main .mv .mvTxt3{
 .eventBn1 .bn2 p{
     position: absolute;
     top: 50px; left: 50px;
+    line-height: 1.2em;
+}
+/* event banner */
+
+.search{
+    width: 100%; height: 326px;
+    background-color: #F3FFE1;
+}
+.search .searchTit{
+    padding-top: 38px;
+    margin-bottom: -30px;
+}
+.search .searchTit h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.search .searchTit>P{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 67px;
     line-height: 1.1em;
+}
+.search .searchTxt{
+    display: flex;
+    flex-flow: column nowrap; 
+}
+.search .searchTxt ul{
+    display: flex;
+    justify-content: center;
+}
+.search .searchTxt ul li{
+    border: 1px solid #000;
+    padding: 5px 20px 5px 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+.search .searchTxt ul li.on{
+    border: 1px solid #98BB67;
+    background-color: #98BB67;
+}
+.search .searchTxt ul li.on a{
+    color: #ffffff;
+}
+/* -------인기있는 검색어---------- */
+
+.eventBn2{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    
+}
+.eventBn2 div img{
+    width: auto; height: 160px;
+    border-radius: 20px;
+}
+.eventBn2 .bn3{
+    margin-right: 20px;
+    position: relative;
+}
+.eventBn2 .bn4{
+    position: relative;
+}
+/* --------- 이벤트베너------------- */
+
+.container .eventItem{margin-top: 160px;}
+.container .eventItem h2 a{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    display: block;
+    justify-content: center;
+}
+.container .eventItem h2 a:hover{
+    color: #98BB67;
+}
+.container .eventItem>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 67px;
+}
+.container .eventItem ul{
+    display: flex;
+    justify-content: center;
+}
+.container .eventItem ul li{margin-left: 20px;}
+.container .eventItem ul li .event_img{
+    width: 285px; height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.container .eventItem ul li:first-child .event_img{
+    margin-left: 0;
+}
+.container .eventItem ul li .event_img img{
+    width: 100%; height: auto;
+    transition: all 0.3s;
+}
+.container .eventItem ul li .event_img img:hover{
+    transform: scale(1.05);
+}
+.container .eventItem ul li .event_txt{}
+.container .eventItem ul li .event_txt .inBox{
+    display: flex;
+    margin: 7px 0 7px 0;
+}
+.container .eventItem ul li .event_txt .inBox p{
+    border: 1px solid #98BB67;
+    color: #98BB67;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.container .eventItem ul li .event_txt .grayTxt{
+    font-size: 12px;
+    color: #777777;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.container .eventItem ul li .event_txt p{
+    font-size: 15px;
+}
+.container .eventItem ul li .event_txt .eventTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
+}
+.container .eventItem ul li .event_txt p span{
+    font-size: 20px; font-weight: 700;
+}
+.container .eventItem .event_sale{
+    display: flex;
+    align-items: center;
+}
+.container .eventItem ul li .event_sale p{
+    padding-left: 15px;
+}
+.container .eventItem ul li .event_sale p:first-child{
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #98BB67;
+}
+.container .eventItem ul li .event_sale .salePrice{
+    font-size: 16px; color: #777777;
+    text-decoration-line: line-through;
+}
+.container .eventItem .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -280px;
+}
+.container .eventItem .button .left{margin-right: 680px;}
+.container .eventItem .button .right{margin-left: 680px;}
+/* ---------EVENT ITEM------- */
+
+/* --------- photoreview --------- */
+.photoReview_wrap{margin-top: 160px;}
+.photoReview_wrap h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.photoReview_wrap p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    /* padding-bottom: 67px; */
+}
+.photoReview_wrap .pReview{
+    margin-top: 67px;
+}
+.photoReview_wrap .pReview ul{
+    display: flex;
+    justify-content: center;
+}
+.photoReview_wrap .pReview ul li{
+    width: 285px; height: 431px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 18px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    margin-left: 20px;
+    position: relative;
+}
+.photoReview_wrap .pReview ul li:first-child{
+    margin-left: 0;
+}
+.photoReview_wrap .pReview .rePhoto{
+    width: 249px; height: 241px;
+    overflow: hidden;
+}
+.photoReview_wrap .pReview .rePhoto img{
+    width: 100%; height: 100%;
+    border-radius: 20px;
+}
+.photoReview_wrap .pReview li .revTxt{
+    margin-top: 20px;
+}
+.photoReview_wrap .pReview li .revTxt h3{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+    width: 100%;
+    margin-bottom: 12px;
+
+}
+.photoReview_wrap .pReview li .revTxt .revTxt_gray{
+    font-size: 14px;
+    font-weight: 300;
+    display: -webkit-box; /* Flexbox와 비슷하지만 텍스트 생략을 위해 사용 */
+    -webkit-line-clamp: 4; /* 3줄까지만 표시 */
+    -webkit-box-orient: vertical; /* 세로 방향으로 박스 정렬 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+    color: #777777;
+    line-height: 1.4em;
+}
+.photoReview_wrap .pReview li .revTxt .id{
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+    width: 100%;
+    margin-top: 10px;
+}
+.photoReview_wrap .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -225px;
+}
+.photoReview_wrap .button .left{margin-right: 680px;}
+.photoReview_wrap .button .right{margin-left: 680px;}
+/* --------- photoreview --------- */
+
+
+.cont_bottom{}
+.cont_bottom .loveWrap{
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.cont_bottom .loveWrap img{
+    width: 100%;
+}
+.cont_bottom .loveWrap p{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: -2%;
+    
+}
+.cont_bottom .loveWrap p span{
+    font-family: 'MapoGoldenPier';
+    color: #3A7714;
+    font-size: 30px;
+    letter-spacing: -3%;
+    line-height: 2em;
+}
+/* 시드물은 자연과 동물을 사랑합니다. */
+.btnWrap{margin-bottom: 160px;}
+.btnWrap ul{
+    display: flex;
+    justify-content: center;
+}
+.btnWrap .box{
+    width: 305px; height: 110px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.btnWrap .box:hover{
+    background-color: #F3FFE1;
+    border: 1px solid #F3FFE1;
+}
+.btnWrap .box:last-child{
+    margin-right: 0;
+}
+.btnWrap .box a{
+    display: flex;
+    align-items: center;
+}
+.btnWrap .box img{
+    width: auto; height: 38px;
+}
+.btnWrap .box .btnTxt{
+    padding: 10px 0 0 20px;
+    
+}
+.btnWrap .box .btnTxt h3{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.btnWrap .box .btnTxt p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+#footer{
+    width: 100%; height: 500px;
+    background-color: #eeeeee;
+    padding: 60px 0 30px 0;
+}
+#footer .ftBg_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer .ftBg_wrap .footer_menu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#footer .ftBg_wrap .footer_menu1 a{}
+#footer .ftBg_wrap .footer_menu1 a img{width: auto; height: 50px;}
+#footer .ftBg_wrap .footer_menu1 .fmenu{
+    display: flex;
+    font-size: 13px;
+}
+#footer .ftBg_wrap .footer_menu1 .fmenu li.on a{
+    font-weight: 700;
+}
+#footer .ftBg_wrap .footer_menu1 .fmenu li{
+    margin-right: 20px;
+}
+#footer .ftBg_wrap .footer_menu1 .snsMenu{}
+#footer .ftBg_wrap .footer_menu1 .snsMenu>a{}
+#footer .ftBg_wrap .footer_menu1 .snsMenu>a img{
+    width: auto; height: 30px; margin: 3px;
+}
+.footer_menu2{
+    display: flex;
+justify-content: space-between;
+margin-top: 50px;
+}
+.footer_menu2>div h3{
+    font-weight: 700;
+}
+.footer_menu2>div>ul>li{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5em;
 }
