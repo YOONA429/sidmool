@@ -1,3 +1,4 @@
+.wrap{min-width: 1300px;}
 header{height: 233px;
     position: relative;}
 header .login{
@@ -133,36 +134,14 @@ header nav .gnb2 li:last-child{
 }
 
 /* ------header------ */
-
-main{min-width: 1200px;}
-main .mv{position: relative;}
-main .mv img{width: 100%;}
-main .mv .mvTxt{
-    position: absolute;
-    top: 50%; transform: translateY(-50%);
-    left: 20%;
-    letter-spacing: -5%;
+.swiper-button-next {
+    color: #dddddd;
+    margin-right: 220px;
 }
-main .mv .mvTxt1{
-    color: #ffffff;
-    font-size: 30px;
-    margin-bottom: 29px;
+.swiper-button-prev{
+    color: #dddddd;
+    margin-left: 220px;
 }
-main .mv .mvTxt2{
-    font-weight: 300;
-font-size:  45px;
-line-height: 1.1em;
-margin-bottom: 25px;
-}
-main .mv .mvTxt2 span{
-    font-weight: bold;
-}
-main .mv .mvTxt3{
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.3em;
-}
-
 /* --------  mainvisual-------- */
 
 .container{}
@@ -386,14 +365,14 @@ main .mv .mvTxt3{
 
 .eventBn1 .bn1 p{
     position: absolute;
-    top: 50px; left: 50px;
-    line-height: 1.1em;
+    top: 60px; left: 50px;
+    line-height: 1.5em;
 
 }
 .eventBn1 .bn2 p{
     position: absolute;
-    top: 50px; left: 50px;
-    line-height: 1.2em;
+    top: 60px; left: 50px;
+    line-height: 1.5em;
 }
 /* event banner */
 
@@ -737,11 +716,11 @@ main .mv .mvTxt3{
     display: flex;
     font-size: 13px;
 }
-#footer .ftBg_wrap .footer_menu1 .fmenu li.on a{
-    font-weight: 700;
-}
 #footer .ftBg_wrap .footer_menu1 .fmenu li{
     margin-right: 20px;
+}
+#footer .ftBg_wrap .footer_menu1 .fmenu .bold{
+    font-weight: 900;
 }
 #footer .ftBg_wrap .footer_menu1 .snsMenu{}
 #footer .ftBg_wrap .footer_menu1 .snsMenu>a{}
