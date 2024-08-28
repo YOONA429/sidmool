@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시드물sidmool</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -59,13 +65,13 @@
             </nav>
         </header><!-- header -->
         <main>
-            <div class="mv">
-                <a href="#"><img src="img/mainvisual.png" alt="수분진정결큐어"></a>
-                <div class="mvTxt">
-                    <p class="mvTxt1">HYDRO-GREEN</p>
-                    <p class="mvTxt2"><span>수분 진정 결큐어</span><br>비건 스킨 케어라인</p>
-                    <p class="mvTxt3">신선한 생알로에베라잎즙 듬뿍<br>피부속 건조함까지 빈틈없이</p>
+            <div class="swiper mv"> <!-- swiper /  swiper-wrapper / swiper-slide 이거 3개는 꼭 같이 들어가야함.-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s1"><a href="#"><img src="img/main_img1.png" alt="수분진정결큐어"></a></div>
+                    <div class="swiper-slide s2"><a href="#"><img src="img/main_img2.png" alt="썬크림"></a></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </main>
         <div class="container">
@@ -397,7 +403,7 @@
                     <ul class="fmenu">
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">이용약관</a></li>
-                        <li class=""><a href="#">개인정보처리방침</a></li>
+                        <li class="bold"><a href="#">개인정보처리방침</a></li>
                         <li><a href="#">이용안내</a></li>
                         <li><a href="#">영상정보처리기기 운영/관리 방침</a></li>
                         <li><a href="#">미확인 입금</a></li>
@@ -420,13 +426,14 @@
                                 대표메일 : help@sidmool.com 팩스 : 042-367-7989<br>
                                 사업자번호 : 305-81-94469 화장품 제조판매업 : 등록필증 제 1163호<br>
                                 통신판매신고번호 : 제2008-대전중구-0247호<br>
-                                건강기능식품일반판매업 : 제 2007-0233493 호 / 건강기능식품유통전문판매업 : 제 2012-0233418 호</li>
+                                건강기능식품일반판매업 : 제 2007-0233493 호 / 건강기능식품유통전문판매업 : 제 2012-0233418 호
+                            </li>
                         </ul>
                     </div>
                     <div class="bankinfo">
                         <h3>BANK INFO</h3>
                         <ul>
-                            <li><span>예금주 : (주)시드물</span></li><br>
+                            <li><span>예금주 : (주)시드물</span><br></li>
                             <li>국민은행 : 460001-04-214514<br>
                                 농협은행 : 355-0002-8749-13<br>
                                 하나은행 : 643-910004-62604<br>
@@ -434,7 +441,8 @@
                                 우리은행 : 1005-902-241888<br>
                                 우체국은행 : 310037-01-011233<br>
                                 기업은행 : 143-122078-01-015<br>
-                                부산은행 : 101-2047-1354-09</li>
+                                부산은행 : 101-2047-1354-09
+                            </li>
                         </ul>
                     </div>
                     <div class="cscenter">
@@ -444,12 +452,23 @@
                             <li>(해외 : +82-42-716-0227)<br>
                                 평일 : AM 9:00 - PM 17:00<br>
                                 점심시간 : PM 12:00 - PM 13:30<br>
-                                토,일요일, 공휴일은 휴무입니다.</li>
+                                토,일요일, 공휴일은 휴무입니다.
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script>
+        const mv = new Swiper('.mv',{
+            autoplay:{delay:3000},
+            loop:true,
+            navigation: {
+                nextEl: '.mv .swiper-button-next',
+                prevEl: '.mv .swiper-button-prev',
+            }
+        })
+    </script>
 </body>
 </html>
