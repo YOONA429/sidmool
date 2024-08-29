@@ -1,0 +1,155 @@
+
+.container .line .gnb ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+
+
+.container{}
+.container .line{
+    border-top: 1px solid #eee;
+}
+
+.container .line .gnb ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 160px;
+}
+.container .line .gnb ul li{
+    margin-left: 25px;
+}
+.container .line .gnb ul li a{
+    font-size: 18px;
+    font-weight: 600;
+}
+.container .line .gnb ul li:hover a{
+    color: #98BB67;
+}
+.container .line .gnb ul li.on a{
+    color: #98BB67;
+}
+
+
+
+
+
+.container .newItem{
+    margin-top: 160px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container .newItem h2>a{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    display: block;
+    justify-content: center;
+}
+.container .newItem>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 67px;
+}
+
+.container .newItem .find{
+    margin-bottom: 30px;
+    background-color: yellow;
+    position: relative;
+}
+.container .newItem .find>ul{
+position: absolute;
+right: 0;
+    
+}
+.container .newItem .find>ul>li{
+
+}
+.container .newItem .find>ul>li>a{
+    font-size: 14px;
+    color: #999;
+}
+.container .newItem .find>ul>li:hover>a{
+    color: #000;
+}
+
+.container .newItem ul{
+    display: flex;
+    margin-bottom: 100px;
+}
+.container .newItem ul li{margin-left: 20px;}
+.container .newItem ul li .new_img{
+    width: 285px; height: auto;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+.container .newItem ul li:first-child .new_img{
+    margin-left: 0;
+}
+.container .newItem ul li .new_img img{
+    width: 100%; height: auto;
+    transition: all 0.3s;
+}
+.container .newItem ul li .new_img:hover img{
+    transform: scale(1.1);
+}
+.container .newItem ul li .new_txt{}
+
+.container .newItem ul li .new_txt .inBox{
+    display: flex;
+    margin: 7px 0 7px 0;
+}
+.container .newItem ul li .new_txt .inBox p{
+    border: 1px solid #98BB67;
+    color: #98BB67;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.container .newItem ul li .new_txt .grayTxt{
+    font-size: 12px;
+    color: #777777;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.container .newItem ul li .new_txt p{
+    font-size: 15px; 
+}
+.container .newItem ul li .new_txt .newTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
+}
+.container .newItem ul li .new_txt p span{
+    font-size: 20px; font-weight: 600;
+}
+.container .newItem ul li .new_sale{
+    display: flex;
+    align-items: center; 
+}
+.container .newItem ul li .new_sale p{
+    padding-left: 15px;
+}
+.container .newItem ul li .new_sale p:first-child{
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #98BB67;
+}
+
+.container .newItem ul li .new_sale .salePrice{
+    font-size: 16px; color: #777777;
+    text-decoration-line: line-through;
+}
+.container .newItem .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -280px;
+}

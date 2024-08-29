@@ -11,7 +11,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/subMain.css">
+    <link rel="stylesheet" href="css/sub1.css">
 </head>
 <body>
     <div class="wrap">
@@ -25,7 +26,7 @@
                 </ul>
             </div>
             <div class="logo">
-                <h1><img src="img/logo.png" alt="시드물로고"></h1>
+                <h1><a href="../index/index.html"><img src="img/logo.png" alt="시드물로고"></a></h1>
                 <ul class="util">
                     <li><a href="#">
                         <p><img src="img/top_icon1.png" alt="마이페이지"></p>
@@ -183,7 +184,7 @@
                 </form>
                 <ul class="gnb1">
                     <li><a href="#">이벤트</a></li>
-                    <li><a href="sub1.html">신제품</a></li>
+                    <li><a href="#">신제품</a></li>
                     <li><a href="#">시드물소개</a></li>
                 </ul>
                 <ul class="gnb2">
@@ -193,35 +194,54 @@
                 </ul>
             </nav>
         </header><!-- header -->
-        <main>
-            <div class="swiper mv"> <!-- swiper /  swiper-wrapper / swiper-slide 이거 3개는 꼭 같이 들어가야함.-->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide s1"><a href="#"><img src="img/main_img1.png" alt="수분진정결큐어"></a></div>
-                    <div class="swiper-slide s2"><a href="#"><img src="img/main_img2.png" alt="썬크림"></a></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </main>
+<!-- ////////////////////container//////////////////////// -->
         <div class="container">
+            <div class="line">
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">카테고리별</a></li>
+                        <li><a href="#">기능/고민별</a></li>
+                        <li><a href="#">성분별</a></li>
+                        <li><a href="#">임상별</a></li>
+                        <li><a href="#">라인별</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li class="on"><a href="#">신제품</a></li>
+                        <li><a href="#">베스트</a></li>
+                    </ul>
+                </div>
+            </div>
             <section class="newItem">
-                <h2><a href="sub1.html">NEW ITEM</a></h2>
+                <h2><a href="#">NEW ITEM</a></h2>
                 <p>고객님의 의견을 반영하여 만든 새로운 신상품!</p>
-                <ul>
+                <div class="find">
+                    <ul>
+                        <li><a href="#">판매량순</a></li>
+                        <li><a href="#">등록일순</a></li>
+                        <li><a href="#">제품명순</a></li>
+                        <li><a href="#">낮은가격순</a></li>
+                        <li><a href="#">높은가격순</a></li>
+                        <li><a href="#">최다리뷰순</a></li>
+                    </ul>
+                </div>
+                <ul class="prod">
                     <li><a href="#">
-                        <div class="new_img"><img src="img/new-item_01.png" alt="마다가스카르리얼수분크림"></div>
+                        <div class="new_img"><img src="img/newitem01.png" alt="레티놀 거상 필 오프 팩 80g"></div>
                         <div class="new_txt">
                             <div class="inBox">
-                                <p>수분보습</p>
-                                <p>장벽강화</p>
+                                <p>탄력</p>
+                                <p>브라이트닝</p>
                             </div>
-                            <p class="grayTxt">초 민감, 장벽 관리 다당류 보습 + 바닐라 만남</p>
-                            <P class="newTit">마다가스카르 리얼 수분크림 with 바닐라 30ml<br>3개 묶음 (개당 약 7,933원)</P>
-                            <p><span>23,800</span>원</p>
+                            <p class="grayTxt">바르고 굳히고 떼어내는 물광 탄력 집중 필 오프 팩</p>
+                            <P class="newTit">레티놀 거상 필 오프 팩 80g</P>
+                            <div class="new_sale">
+                                <p>40%</p>
+                                <p class="salePrice">28,000원</p>
+                                <p><span>16,800</span>원</p>
+                            </div>
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="new_img"><img src="img/new-item_02.png" alt="리얼 아쿠아포린 수분 앰플 12ml"></div>
+                        <div class="new_img"><img src="img/newitem02.png" alt="리얼 아쿠아포린 수분 앰플 12ml"></div>
                         <div class="new_txt">
                             <div class="inBox">
                                 <p>GOOD</p>
@@ -233,7 +253,7 @@
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="new_img"><img src="img/new-item_03.png" alt="라하 요철 제로 클렌징오일 200ml"></div>
+                        <div class="new_img"><img src="img/newitem03.png" alt="라하 요철 제로 클렌징오일 200ml"></div>
                         <div class="new_txt">
                             <div class="inBox">
                                 <p>모공관리</p>
@@ -246,286 +266,240 @@
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="new_img"><img src="img/new-item_04.png" alt="마다가스카르리얼수분크림"></div>
+                        <div class="new_img"><img src="img/newitem04.png" alt="레티놀 엑소좀 스피큘 하이드로겔 51g"></div>
                         <div class="new_txt">
                             <div class="inBox">
-                                <p>수분보습</p>
-                                <p>장벽강화</p>
+                                <p>주름개선</p>
+                                <p>탄력</p>
+                                <p>화이트닝</p>
                             </div>
-                            <p class="grayTxt">바르고 굳히고 떼어내는 물광 탄력 집중 필 오프 팩</p>
-                            <P class="newTit">레티놀 거상 필 오프 팩 80g</P>
-                            <div class="new_sale">
-                                <p>40%</p>
-                                <p class="salePrice">28,000원</p>
-                                <p><span>16,800</span>원</p>
-                            </div>
+                            <p class="grayTxt">51g 레티놀 엑소좀 스피큘 앰플을 통째로 담은 귀한 스페셜 팩</p>
+                            <P class="newTit">레티놀 엑소좀 스피큘 하이드로겔 51g</P>
+                            <p><span>9,600 </span>원<br></p>
                         </div>
                     </a></li>
                 </ul>
-                <div class="button">
-                    <div class="left"><a href="#"><img src="img/button_left.png" alt="왼쪽버튼"></a></div>
-                    <div class="right"><a href="#"><img src="img/button_right.png" alt="오른쪽버튼"></a></div>
-                </div>
-            </section>
-            <section class="bestItem">
-                <h2><a href="#">BEST ITEM</a></h2>
-                <p>시드물에서 가장 사랑받는 제품을 만나보세요!</p>
-                <ul>
+                <ul class="prod">
                     <li><a href="#">
-                        <div class="best_img"><img src="img/best-item_01.png" alt="마다가스카르 리얼 수분크림 80g"></div>
-                        <div class="best_txt">
+                        <div class="new_img"><img src="img/newitem05.png" alt="레티놀 수분 오일 12ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
-                                <p>수분보습</p>
-                                <p>장벽강화</p>
-                                <p>여드름임상완료</p>
+                                <p>모공관리</p>
+                                <p>탄력</p>
                             </div>
-                            <p class="grayTxt">초 민감성, 장벽강화 다당류 보습</p>
-                            <P class="bestTit">마다가스카르 리얼 수분크림 80g</P>
-                            <p><span>23,800</span>원</p>
+                            <p class="grayTxt">북극곰 피부 건강의 비밀! 탄력 집중 수분 오일</p>
+                            <P class="newTit">레티놀 수분 오일 12ml</P>
+                            <div class="new_sale">
+                                <p>56%</p>
+                                <p class="salePrice">22,000원</p>
+                                <p><span>9,600</span>원</p>
+                            </div>
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="best_img"><img src="img/best-item_02.png" alt="민중기 EGF 앰플 11ml"></div>
-                        <div class="best_txt">
+                        <div class="new_img"><img src="img/newitem06.png" alt="스킨소스 스피큘 부스팅 앰플 12ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
-                                <p>주름개선</p>
-                                <p>장벽강화</p>
-                                <p>여드름임상완료</p>
+                                <p>GOOD</p>
+                                <p>탄력</p>
                             </div>
-                            <p class="grayTxt">리포좀 EGF 50PPM 20% 적용 리페어/주름개선</p>
-                            <P class="bestTit">민중기 EGF 앰플 11ml</P>
-                            <p><span>39,800</span>원</p>
+                            <p class="grayTxt">오직 흡수력을 돕기 위한 고농축 스피큘 앰플!</p>
+                            <P class="newTit">리얼 아쿠아포린 수분 앰플 12ml</P>
+                            <p><span>18,600</span>원<br></p>
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="best_img"><img src="img/best-item_03.png" alt="민중기 EGF 앰플 11ml"></div>
-                        <div class="best_txt">
+                        <div class="new_img"><img src="img/newitem07.png" alt="피지제로 롤링 볼"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>HIT</p>
+                                <p>과다피지</p>
+                            </div>
+                            <p class="grayTxt">과도한 피지, X기름 컨트롤! 신개념 기름 제거 롤링 스틱</p>
+                            <P class="newTit">피지제로 롤링 볼<br></P>
+                            <p><span>8,600</span>원</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem08.png" alt="디판테놀 20 멀티 밤 13ml"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>HIT</p>
+                                <p>과다피지</p>
+                            </div>
+                            <p class="grayTxt">영국산 덱스판테놀 20% 언제 어디서나 피부 장벽 관리!</p>
+                            <P class="newTit">디판테놀 20 멀티 밤 13ml</P>
+                            <p><span>6,800</span>원<br></p>
+                        </div>
+                    </a></li>
+                </ul>
+                <ul class="prod">
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem09.png" alt="라하 요철 제로 버블 토너 150ml"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>GOOD</p>
+                                <p>수분보습</p>
+                                <p>수딩</p>
+                            </div>
+                            <p class="grayTxt">촉촉 미세 라하 버블!! 소프트 버블 각질 장벽 케어!</p>
+                            <P class="newTit">라하 요철 제로 버블 토너 150ml</P>
+                            <div class="new_sale">
+                                <p>66%</p>
+                                <p class="salePrice">28,600원</p>
+                                <p><span>9,600</span>원</p>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem10.png" alt="스킨소스 애버매트 99 모공 타이트닝 앰플12ml"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>모공관리</p>
+                                <p>과다피지</p>
+                            </div>
+                            <p class="grayTxt">모든 피부 고민의 시작! 과다 유분/피지 관리</p>
+                            <P class="newTit">스킨소스 애버매트 99 모공 타이트닝 앰플12ml</P>
+                            <p><span>22,800</span>원<br></p>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem11.png" alt="유성 온천수 미스트 150ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
                                 <p>수분보습</p>
-                                <p>장벽강화</p>
+                                <p>수딩</p>
                             </div>
-                            <p class="grayTxt">오일프리/확실한장벽케어 영국산 D-판테놀 30%</p>
-                            <P class="bestTit">스킨소스 D-판테놀 앰플12ml/32ml</P>
-                            <div class="best_sale">
-                                <p>17%</p>
-                                <p class="salePrice">11,800</p>
+                            <p class="grayTxt">진짜 유성 온천수 97.6% 미네랄 수분 충전!</p>
+                            <P class="newTit">유성 온천수 미스트 150ml<br></P>
+                            <div class="new_sale">
+                                <p>46%</p>
+                                <p class="salePrice">18,000원</p>
                                 <p><span>9,800</span>원</p>
                             </div>
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="best_img"><img src="img/best-item_04.png" alt="13년을 사랑받아온 민중기 무기자차 썬크림 SPF40 PA++"></div>
-                        <div class="best_txt">
+                        <div class="new_img"><img src="img/newitem12.png" alt="스킨소스 매트릭실 30 앰플 12ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
-                                <p>자외선차단</p>
-                                <p>여드름임상완료</p>
+                                <p>GOOD</p>
+                                <p>탄력</p>
                             </div>
-                            <p class="grayTxt">순수 무기차단제 100 NO옥시벤존/NO옥티녹세이트</p>
-                            <P class="bestTit">13년을 사랑받아온 민중기 무기자차 썬크림<br>SPF40 PA++</P>
-                            <p><span>16,400</span>원</p>
+                            <p class="grayTxt">매트릭실 3000 30% 민감 탄력 주름 굴곡 케어!</p>
+                            <P class="newTit">스킨소스 매트릭실 30 앰플 12ml</P>
+                            <div class="new_sale">
+                                <p>70%</p>
+                                <p class="salePrice">52,000원</p>
+                                <p><span>15,600</span>원</p>
+                            </div>
                         </div>
                     </a></li>
                 </ul>
-                <div class="button">
-                    <div class="left"><a href="#"><img src="img/button_left.png" alt="왼쪽버튼"></a></div>
-                    <div class="right"><a href="#"><img src="img/button_right.png" alt="오른쪽버튼"></a></div>
-                </div>
-            </section>
-            <section class="eventBn1">
-                <div class="bn1">
-                    <a href="#"><img src="img/eventBenner01.png" alt="미백관리라인"></a>
-                    <p>WHITENING LINE<br><span>미백관리라인</span></p>
-                </div>
-                <div class="bn2">
-                    <a href="#"><img src="img/eventBenner02.png" alt="수분크림라인"></a>
-                    <p>MOISTURE CREAM LING<br><span>수분크림라인</span></p>
-                </div>
-            </section>
-            <section class="search">
-                <div class="searchTit">
-                    <h2>시드물 인기 검색어</h2>
-                    <p>시드물에서 가장 사랑받는 검색어에요<br>
-                    관심있는 검색어가 있으신가요?</p>
-                </div>
-                <div class="searchTxt">
-                    <ul class="searchTxt_01">
-                        <li><a href="#">EGF</a></li>
-                        <li class="on"><a href="#">트러블</a></li>
-                        <li><a href="#">미백</a></li>
-                        <li class="on"><a href="#">탄력</a></li>
-                        <li><a href="#">흔적</a></li>
-                        <li><a href="#">레티놀</a></li>
-                        <li><a href="#">안티에이징</a></li>
-                        <li class="on"><a href="#">장벽관리</a></li>
-                        <li><a href="#">속보습</a></li>
-                    </ul>
-                    <ul class="searchTxt_02">
-                        <li class="on"><a href="#">주름</a></li>
-                        <li><a href="#">각질관리</a></li>
-                        <li><a href="#">수분크림</a></li>
-                        <li><a href="#">수분부족지성</a></li>
-                        <li><a href="#">무기자차</a></li>
-                        <li><a href="#">썬케어</a></li>
-                        <li><a href="#">클렌징</a></li>
-                        <li class="on"><a href="#">모공</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="eventBn2">
-                <div class="bn3">
-                    <a href="#"><img src="img/eventBenner03.png" alt="레티놀 흔적 리페어 시리즈"></a>
-                </div>
-                <div class="bn4">
-                    <a href="#"><img src="img/eventBenner04.png" alt="이 달의 구매내역 금액대별 사은품"></a>
-                </div>
-            </section>
-            <section class="eventItem">
-                <h2><a href="#">EVENT ITEM</a></h2>
-                <p>사은품 증정 이벤트 / 1+1이벤트 / 할인이벤트</p>
-                <ul>
+                <ul class="prod">
                     <li><a href="#">
-                        <div class="event_img"><img src="img/event_img_01.png" alt="민중기 EGF 앰플 11ml"></div>
-                        <div class="event_txt">
+                        <div class="new_img"><img src="img/newitem13.png" alt="라하 요철 제로 에센스 30ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
-                                <p>다크스팟</p>
-                                <p>진정</p>
+                                <p>수분보습</p>
+                                <p>수딩</p>
                             </div>
-                            <p class="grayTxt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
-                            <P class="eventTit">시드물 센텔라 구스팟 크림 30ml</P>
-                            <div class="event_sale">
-                                <p>26%</p>
-                                <p class="salePrice">22,800원</p>
+                            <p class="grayTxt">라하+율무+판테놀 조합! 피지,요철,각질,모공 케어!</p>
+                            <P class="newTit">라하 요철 제로 에센스 30ml</P>
+                            <div class="new_sale">
+                                <p>37%</p>
+                                <p class="salePrice">26,800원</p>
                                 <p><span>16,800</span>원</p>
                             </div>
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="event_img"><img src="img/event_img_02.png" alt="바이오 기능성 화장품 rh-bFGF 20PPM 99%"></div>
-                        <div class="event_txt">
+                        <div class="new_img"><img src="img/newitem14.png" alt="스킨소스 애버매트 99 모공 타이트닝 앰플12ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
-                                <p>탄력</p>
-                                <p>리페어</p>
+                                <p>수분보습</p>
+                                <p>수딩</p>
                             </div>
-                            <p class="grayTxt">바이오 기능성 화장품 rh-bFGF 20PPM 99%</p>
-                            <P class="eventTit">민중기 피브로블라스트 앰플 11ml<br>SPF40 PA++</P>
-                            <p><span>69,800</span>원</p>
+                            <p class="grayTxt">5나노 히알루론산 초미세 흡수력!</p>
+                            <P class="newTit">스킨소스 5나노 히알루론산 앰플 12ml</P>
+                            <p><span>32,000</span>원<br></p>
                         </div>
                     </a></li>
                     <li><a href="#">
-                        <div class="event_img"><img src="img/event_img_03.png" alt="비타민C,E,페룰릭의 조화 탄력 넘치고 밝은 피부로"></div>
-                        <div class="event_txt">
+                        <div class="new_img"><img src="img/newitem15.png" alt="스킨소스 이데베논 3만 앰플 12ml"></div>
+                        <div class="new_txt">
                             <div class="inBox">
                                 <p>탄력</p>
-                                <p>내츄럴99</p>
+                                <p>브라이트닝</p>
+                            </div>
+                            <p class="grayTxt">탄력의 제왕! 고순도 고함량 이데베논 집중 케어 앰플</p>
+                            <P class="newTit">스킨소스 이데베논 3만 앰플 12ml<br></P>
+                            <p><span>12,828</span>원<br></p>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem16.png" alt="민중기 시카지에프 스피큘 앰플 30ml"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>각질관리</p>
+                                <p>탄력</p>
                                 <p>화이트닝</p>
                             </div>
-                            <p class="grayTxt">비타민C,E,페룰릭의 조화 탄력 넘치고 밝은 피부로</p>
-                            <P class="eventTit">비타민CE 페룰릭 앰플 플러스 13g 1+1</P>
-                            <p><span>28,400</span>원</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="event_img"><img src="img/event_img_04.png" alt="시드물 더마 인텐시브 엠디 크림 80g"></div>
-                        <div class="event_txt">
-                            <div class="inBox">
-                                <p>GOOD</p>
-                                <p>EVENT</p>
+                            <p class="grayTxt">바르는 MTS! 스피큘 300샷 마니 앰플!</p>
+                            <P class="newTit">민중기 시카지에프 스피큘 앰플 30ml</P>
+                            <div class="new_sale">
+                                <p>51%</p>
+                                <p class="salePrice">58,600원</p>
+                                <p><span>28,600</span>원</p>
                             </div>
-                            <p class="grayTxt">비타민C,E,페룰릭의 조화 탄력 넘치고 밝은 피부로</p>
-                            <P class="eventTit">시드물 더마 인텐시브 엠디 크림 80g</P>
-                            <p><span>32,000</span>원</p>
                         </div>
                     </a></li>
                 </ul>
-                <div class="button">
-                    <div class="left"><a href="#"><img src="img/button_left.png" alt="왼쪽버튼"></a></div>
-                    <div class="right"><a href="#"><img src="img/button_right.png" alt="오른쪽버튼"></a></div>
-                </div>
-            </section>
-            <section class="photoReview_wrap">
-                <h2>베스트 리얼 포토후기</h2>
-                <p>고객님들께서 남겨주신 진짜 사용 후기입니다.</p>
-                <div class="pReview">
-                    <ul>
-                        <li><a href="#">
-                            <div class="rePhoto"><img src="img/photoreview_img_01.png" alt="리뷰이미지"></div>
-                            <div class="revTxt">
-                                <h3>지성피부 여드케어는 시드물과 함께 하세요</h3>
-                                <p class="revTxt_gray">그때는 제 피부가 워낙 망가져있어서루틴에 들어가는 제품도 많았는데피부에 부담이 느껴지기도 하고, 더워지니 그 루틴대로 할 수 없더라구요!그래서 제 주관적 소견이지만 여드* 지성피부 여름 루틴 케어를 같이 공유해보려고 해요!이번 후기로 다른 분들도 피부 고민에 도움 되셨으면 좋겠어요☺️</p>
-                                <p class="id">acte*** | 2024-08-02 | 11:44:18</p>
+                <ul class="prod">
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem17.png" alt="리얼순 레드트럽 디판테놀 수딩젤 165ml"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>진정</p>
+                                <p>수딩</p>
                             </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class="rePhoto"><img src="img/photoreview_img_02.png" alt="리뷰이미지"></div>
-                            <div class="revTxt">
-                                <h3>지성피부 여드케어는 시드물과 함께 하세요</h3>
-                                <p class="revTxt_gray">그때는 제 피부가 워낙 망가져있어서루틴에 들어가는 제품도 많았는데피부에 부담이 느껴지기도 하고, 더워지니 그 루틴대로 할 수 없더라구요!그래서 제 주관적 소견이지만 여드* 지성피부 여름 루틴 케어를 같이 공유해보려고 해요!이번 후기로 다른 분들도 피부 고민에 도움 되셨으면 좋겠어요☺️</p>
-                                <p class="id">acte*** | 2024-08-02 | 11:44:18</p>
+                            <p class="grayTxt">진짜 순하고 진짜 빠른 진정 케어! 산뜻 촉촉 디판테놀 수딩젤</p>
+                            <P class="newTit">리얼순 레드트럽 디판테놀 수딩젤 165ml</P>
+                            <div class="new_sale">
+                                <p>56%</p>
+                                <p class="salePrice">38,000원</p>
+                                <p><span>16,800</span>원</p>
                             </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class="rePhoto"><img src="img/photoreview_img_03.png" alt="리뷰이미지"></div>
-                            <div class="revTxt">
-                                <h3>지성피부 여드케어는 시드물과 함께 하세요</h3>
-                                <p class="revTxt_gray">그때는 제 피부가 워낙 망가져있어서루틴에 들어가는 제품도 많았는데피부에 부담이 느껴지기도 하고, 더워지니 그 루틴대로 할 수 없더라구요!그래서 제 주관적 소견이지만 여드* 지성피부 여름 루틴 케어를 같이 공유해보려고 해요!이번 후기로 다른 분들도 피부 고민에 도움 되셨으면 좋겠어요☺️</p>
-                                <p class="id">actedd*** | 2024-08-02 | 11:44:18</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="new_img"><img src="img/newitem16.png" alt="닥터트럽 트러블 클렌져 300ml / 리필용 500ml [선택구입]"></div>
+                        <div class="new_txt">
+                            <div class="inBox">
+                                <p>수분보습</p>
+                                <p>수딩</p>
                             </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class="rePhoto"><img src="img/photoreview_img_04.png" alt="리뷰이미지"></div>
-                            <div class="revTxt">
-                                <h3>지성피부 여드케어는 시드물과 함께 하세요</h3>
-                                <p class="revTxt_gray">그때는 제 피부가 워낙 망가져있어서루틴에 들어가는 제품도 많았는데피부에 부담이 느껴지기도 하고, 더워지니 그 루틴대로 할 수 없더라구요!그래서 제 주관적 소견이지만 여드* 지성피부 여름 루틴 케어를 같이 공유해보려고 해요!이번 후기로 다른 분들도 피부 고민에 도움 되셨으면 좋겠어요☺️</p>
-                                <p class="id">acte*** | 2024-08-02 | 11:44:18</p>
+                            <p class="grayTxt">여드름 약산성 세안제 트러블 케어 리필용 구매 가능!</p>
+                            <P class="newTit">닥터트럽 트러블 클렌져 300ml / 리필용 500ml [선택구입]</P>
+                            <div class="new_sale">
+                                <p>15%</p>
+                                <p class="salePrice">18,300원</p>
+                                <p><span>15,600</span>원</p>
                             </div>
-                        </a></li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <div class="left"><a href="#"><img src="img/button_left.png" alt="왼쪽버튼"></a></div>
-                    <div class="right"><a href="#"><img src="img/button_right.png" alt="오른쪽버튼"></a></div>
-                </div>
+                        </div>
+                    </a></li>
+                </ul>
             </section>
         </div>
+
+
         <div class="cont_bottom">
             <div class="loveWrap"><a href="#">
                 <img src="img/bottom_img.png" alt="시드물은 자연과동물을 사랑합니다.">
                 <p><span>시드물은 자연과 동물을 사랑합니다.</span><br>시드물은 사용 후 공병을 회수받아서 자연에서 부담이 되지 않도록 다양하게 활용하고 처리하고있습니다.</p>
             </a></div>
-            <div class="btnWrap">
-                <ul>
-                    <li class="box"><a href="#">
-                        <img src="img/btn_bell_img.png" alt="공지사항">
-                        <div class="btnTxt">
-                            <h3>공지사항</h3>
-                            <p>시드물의 새로운 소식을<br>가장 빠르게 알려드립니다.</p>
-                        </div>
-                    </a></li>
-                    <li class="box"><a href="#">
-                        <img src="img/btn_gift.png" alt="사은품 & 회원등급 혜택">
-                        <div class="btnTxt">
-                            <h3>사은품 & 회원등급 혜택</h3>
-                            <p>고객만족 100%를 위한 더욱 커지는<br>할인혜택을 확인해주세요.</p>
-                        </div>
-                    </a></li>
-                    <li class="box"><a href="#">
-                        <img src="img/btn_bubble.png" alt="1:1 문의 게시판">
-                        <div class="btnTxt">
-                            <h3>1:1 문의 게시판</h3>
-                            <p>궁금한 사항이나 문의사항을<br>편안하게 남겨주세요</p>
-                        </div>
-                    </a></li>
-                    <li class="box"><a href="#">
-                        <img src="img/btn_calander.png" alt="출석체크">
-                        <div class="btnTxt">
-                            <h3>출석체크</h3>
-                            <p>시드물 고객님들을 위한 출석체크<br>이벤트입니다.</p>
-                        </div>
-                    </a></li>
-                </ul>
-            </div>
         </div>
-        <footer id="footer">
+        <footer id="footer"><!-- footer -->
             <div class="ftBg_wrap">
                 <div class="footer_menu1">
                     <a href="#"><img src="img/ft_logo.png" alt="시드물로고"></a>

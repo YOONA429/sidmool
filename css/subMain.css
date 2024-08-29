@@ -1,0 +1,371 @@
+.wrap{min-width: 1300px;
+position: relative;
+}
+header{height: 233px;
+    position: relative;}
+header .login{
+    width: 100%; height: 31px;
+    background-color: #98BB67;
+    position: absolute;
+}
+header .login .login_txt{
+    position: absolute;
+    display: flex;
+    right: 10%; top: 8px;
+    font-size: 13px;
+    font-weight: 300;
+}
+header .login .login_txt li a{
+color: #ffffff;
+}
+
+header .login .login_txt li::after{
+    content: '|';
+    margin-right: 10px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+header .login .login_txt li:last-child::after{
+    content: '';
+    margin: 0;
+    padding: 0;
+}
+
+header .logo{}
+header .logo h1{
+    position: absolute;
+    top: 100px;
+    left: 50%; transform: translateX(-50%);
+}
+header .logo h1 img{width: auto; height: 60px;}
+header .logo .util{
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 100px;
+    text-align: center; 
+}
+header .logo .util li{
+    margin-right: 20px;
+
+}
+header .logo .util li:last-child{
+    margin: 0;
+}
+header .logo .util img{
+    width: 28px; height: auto;
+}
+header .logo .util p{
+    font-size: 13px;
+    line-height: 1.2em;
+}
+header nav{}
+header nav .allmenu{
+    width: 30px; height: 18px;
+    bottom: 20px;
+    position: absolute;
+    left: 10%;
+    display: block;
+}
+header nav .allmenu span{
+    position: absolute;
+    width: 28px; height: 2px;
+    background-color: #98BB67;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+header nav .allmenu span:nth-child(1){top: 0;}
+header nav .allmenu span:nth-child(2){top: 8px;}
+header nav .allmenu span:nth-child(3){top: 8px;}
+header nav .allmenu span:nth-child(4){top: 16px;}
+
+header nav .allmenu:hover span:nth-child(1){display: none;}
+header nav .allmenu:hover span:nth-child(2){transform: rotate(45deg);}
+header nav .allmenu:hover span:nth-child(3){transform: rotate(-45deg);}
+header nav .allmenu:hover span:nth-child(4){display:none;}
+
+header nav form{
+    position: absolute;
+    bottom: 20px;
+    left: 50%; transform: translateX(-50%);
+}
+header nav form input{
+    width: 363px; height: 35px;
+    padding-left: 40px;
+    border-radius: 50px;
+    border: 1px solid #98BB67;
+    outline: none;
+}
+header nav form img{
+    position: absolute;
+    left: 5px; top: 3px;
+    width: 28px; height: auto;
+}
+header nav .gnb1{
+    display: flex;
+    position: absolute;
+    left: 13%; bottom: 20px;
+}
+header nav .gnb1 li:hover a{
+    font-weight: 700;
+    color: #3A7714;
+}
+
+header nav .gnb1 li{
+    margin-left: 15px;
+}
+header nav .gnb1 li:last-child{
+    margin-left: 15px
+}
+header nav .gnb2{
+    display: flex;
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+}
+header nav .gnb2 li{
+    margin-right: 15px;
+}
+header nav .gnb2 li:hover a{
+    font-weight: 700;
+    color: #3A7714;
+}
+header nav .gnb2 li:last-child{
+    margin-right: 0;
+}
+/* ------header------ */
+
+
+.cont_bottom{}
+.cont_bottom .loveWrap{
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 0;
+}
+.cont_bottom .loveWrap img{
+    width: 100%;
+}
+.cont_bottom .loveWrap p{
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: -2%;
+    
+}
+.cont_bottom .loveWrap p span{
+    font-family: 'MapoGoldenPier';
+    color: #3A7714;
+    font-size: 30px;
+    letter-spacing: -3%;
+    line-height: 2em;
+}
+/* 시드물은 자연과 동물을 사랑합니다. */
+.btnWrap{margin-bottom: 160px;}
+.btnWrap ul{
+    display: flex;
+    justify-content: center;
+}
+.btnWrap .box{
+    width: 305px; height: 110px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.btnWrap .box:hover{
+    background-color: #F3FFE1;
+    border: 1px solid #F3FFE1;
+}
+.btnWrap .box:last-child{
+    margin-right: 0;
+}
+.btnWrap .box a{
+    display: flex;
+    align-items: center;
+}
+.btnWrap .box img{
+    width: auto; height: 38px;
+}
+.btnWrap .box .btnTxt{
+    padding: 10px 0 0 20px;
+    
+}
+.btnWrap .box .btnTxt h3{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.btnWrap .box .btnTxt p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+#footer{
+    width: 100%; height: 500px;
+    background-color: #eeeeee;
+    padding: 60px 0 30px 0;
+}
+#footer .ftBg_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer .ftBg_wrap .footer_menu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#footer .ftBg_wrap .footer_menu1 a{}
+#footer .ftBg_wrap .footer_menu1 a img{width: auto; height: 50px;}
+#footer .ftBg_wrap .footer_menu1 .fmenu{
+    display: flex;
+    font-size: 13px;
+}
+#footer .ftBg_wrap .footer_menu1 .fmenu li{
+    margin-right: 20px;
+}
+#footer .ftBg_wrap .footer_menu1 .fmenu .bold{
+    font-weight: 900;
+}
+#footer .ftBg_wrap .footer_menu1 .snsMenu{}
+#footer .ftBg_wrap .footer_menu1 .snsMenu>a{}
+#footer .ftBg_wrap .footer_menu1 .snsMenu>a img{
+    width: auto; height: 30px; margin: 3px;
+}
+.footer_menu2{
+    display: flex;
+justify-content: space-between;
+margin-top: 50px;
+}
+.footer_menu2>div h3{
+    font-weight: 700;
+}
+.footer_menu2>div>ul>li{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+/* ///////// 햄버거버튼 전체메뉴//////// */
+.downmenu{display: none;}
+#dropdown_menu{
+    display: flex;
+    position: absolute;
+    top: 233px; left: 0;
+    z-index: 100;
+    width: 100%; height: 517px;
+    
+}
+#dropdown_menu .dAllMenu{
+    width: 341px; height: 517px;
+    background-color: #98BB67;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+#dropdown_menu .dAllMenu .menu_close{
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dropdown_menu .dAllMenu .menu_close img{
+    padding: 20px;
+}
+#dropdown_menu .dAllMenu .menu_close:hover img{
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+#dropdown_menu .dAllMenu .menu_close p{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #98BB67;
+    width: 80px; height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit{
+    margin-top: 52px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul{}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li{}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 243px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+    width: 244px; height: 80px;
+    align-items: center;
+    border-top: 1px solid #fff;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li:last-child>a{
+    border-bottom: 1px solid #fff;}
+
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li>a img{
+    width: auto; height: 33px;
+    margin-left: 20px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li>a p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+#dropdown_menu .dSubMenu{}
+#dropdown_menu .dSubMenu .dSubMenu_bg{
+    width: 1579px; height: 517px;
+    background-color: #F2F7EB;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul{
+    padding-top: 50px;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li{
+    display: flex;
+    align-items: center;
+    width: 100%; height: 85px;
+    border-bottom: 1px solid #98BB67;
+}#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li:last-child{
+    border-bottom: none;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li>div{
+    width: 53px;
+    text-align: right;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li>div img{
+    width: auto; height: 30px;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li h3{
+    width: 95px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #98BB67;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li>a{
+    display: flex;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li .s_txt{
+    display: flex;
+    font-size: 15px;
+    font-weight: 200;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li> .s_txt li a::after{
+    content: '|';
+    color: #98BB67;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li> .s_txt li:last-child a::after{
+    content: '';
+}
