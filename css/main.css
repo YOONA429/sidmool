@@ -1,4 +1,6 @@
-.wrap{min-width: 1300px;}
+.wrap{min-width: 1300px;
+position: relative;
+}
 header{height: 233px;
     position: relative;}
 header .login{
@@ -64,7 +66,6 @@ header nav .allmenu{
     position: absolute;
     left: 10%;
     display: block;
-    
 }
 header nav .allmenu span{
     position: absolute;
@@ -739,4 +740,123 @@ margin-top: 50px;
     font-size: 13px;
     font-weight: 300;
     line-height: 1.5em;
+}
+
+
+/* ///////// 햄버거버튼 전체메뉴//////// */
+.downmenu{display: none;}
+#dropdown_menu{
+    display: flex;
+    position: absolute;
+    top: 233px; left: 0;
+    z-index: 100;
+    width: 100%; height: 517px;
+    
+}
+#dropdown_menu .dAllMenu{
+    width: 341px; height: 517px;
+    background-color: #98BB67;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+#dropdown_menu .dAllMenu .menu_close{
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#dropdown_menu .dAllMenu .menu_close img{
+    padding: 20px;
+}
+#dropdown_menu .dAllMenu .menu_close:hover img{
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+#dropdown_menu .dAllMenu .menu_close p{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #98BB67;
+    width: 80px; height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit{
+    margin-top: 52px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul{}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li{}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 243px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+    width: 244px; height: 80px;
+    align-items: center;
+    border-top: 1px solid #fff;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li:last-child>a{
+    border-bottom: 1px solid #fff;}
+
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li>a img{
+    width: auto; height: 33px;
+    margin-left: 20px;
+}
+#dropdown_menu .dAllMenu .dAllMenu_tit>ul>li>a p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+#dropdown_menu .dSubMenu{}
+#dropdown_menu .dSubMenu .dSubMenu_bg{
+    width: 1579px; height: 517px;
+    background-color: #F2F7EB;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul{
+    padding-top: 50px;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li{
+    display: flex;
+    align-items: center;
+    width: 100%; height: 85px;
+    border-bottom: 1px solid #98BB67;
+}#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li:last-child{
+    border-bottom: none;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li>div{
+    width: 53px;
+    text-align: right;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li>div img{
+    width: auto; height: 30px;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li h3{
+    width: 95px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #98BB67;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li>a{
+    display: flex;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li .s_txt{
+    display: flex;
+    font-size: 15px;
+    font-weight: 200;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li> .s_txt li a::after{
+    content: '|';
+    color: #98BB67;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+#dropdown_menu .dSubMenu .dSubMenu_bg>ul>li> .s_txt li:last-child a::after{
+    content: '';
 }
