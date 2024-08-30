@@ -21,15 +21,19 @@
     color: #000; list-style: none;
     font-family: "Pretendard", sans-serif;  /* 산세리프 넣는 이유_앞에 글꼴에 문제 생길때 후보로 넣는 서체 */
     }
-
+    img{vertical-align: top;}
     a{
         text-decoration: none;
     }
     table,tr,td,th{
         border-collapse: collapse;
     }
-    button{
+    button, input, textarea, select {
         cursor: pointer;
-        /* border: 0;
-        background-color: transparent; */
+        background: none;
+        border: none;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
     }

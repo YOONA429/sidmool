@@ -1,15 +1,12 @@
 
+.container{}
+.container .line{
+    border-top: 1px solid #eee;
+}
 .container .line .gnb ul{
     display: flex;
     justify-content: center;
     margin-top: 85px;
-}
-
-
-
-.container{}
-.container .line{
-    border-top: 1px solid #eee;
 }
 
 .container .line .gnb ul{
@@ -31,10 +28,6 @@
 .container .line .gnb ul li.on a{
     color: #98BB67;
 }
-
-
-
-
 
 .container .newItem{
     margin-top: 160px;

@@ -1,0 +1,402 @@
+.container{
+    margin: 0 auto;
+}
+.container .cont_top{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container .cont_top .box_right{
+    width: 653px; height: 507px;
+    border: 1px solid #eee;
+    padding: 32px;
+    box-sizing: border-box;
+}
+.container .cont_top .box_right form{}
+.container .cont_top .box_right form .boxTop{
+    border-bottom: 1px solid #eee;
+    width: 585px;
+    margin-bottom: 15px;
+}
+form .boxTop .topleftright{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+form .boxTop .topleftright .TopL{}
+form .boxTop .topleftright .TopL span{
+    padding: 3px;
+    border: 1px solid #98BB67;
+    color: #98BB67;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+form .boxTop .topleftright .TopR{
+    display: flex;
+    align-items: center;
+} 
+form .boxTop .topleftright .TopR span{
+    color: #999;
+    font-size: 13px;
+}
+form .boxTop .boxTopTit{}
+form .boxTop .boxTopTit h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+form .boxTop .boxTopTit p{
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0 18px 0;
+}
+form .boxTop .boxTopTit p.price{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* ----------top------------ */
+
+form .boxMiddle{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+}
+form .boxMiddle .boxMiddleTxt{
+    display: flex;
+    flex-flow: row wrap; /* 방향설정, 줄바꿈 설정 */
+    position: relative;
+    align-items: center;
+}
+form .boxMiddle .boxMiddleTxt dt{
+    width: 74px;
+    line-height: 2.2em;
+    font-size: 14px;
+    color: #999;
+}
+form .boxMiddle .boxMiddleTxt dd{
+    width: calc(100% - 74px);
+}
+form .boxMiddle .boxMiddleTxt .md_boxtxt{
+position: absolute;
+top: 0; right: 0; 
+margin-top: 10px;
+}
+form .boxMiddle .boxMiddleTxt .md_boxtxt span{
+    padding: 5px 10px;
+    border: 1px solid #999;
+    margin-right: 5px;
+    border-radius: 3px;
+
+}
+form .boxMiddle .boxMiddleTxt .md_boxtxt span a{
+    color: #999;
+    font-size: 13px;
+}
+form .boxMiddle .add_prod{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+form .boxMiddle .add_prod .addTit1{
+    display: flex;
+    align-items: center;
+}
+form .boxMiddle .add_prod .addTit1 span{
+    margin-right: 20px;
+    color: #999;
+}
+form .boxMiddle .add_prod .addTit1 .name{
+    position: relative;
+}
+form .boxMiddle .add_prod .addTit1 .name input{
+    width: 300px; height: 35px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+form .boxMiddle .add_prod .addTit1 .name img{
+    width: 30px; height: auto;
+    position: absolute;
+    right: 0; top: 2px;
+    margin-right: 10px;
+    z-index: 100;
+}
+form .boxMiddle .add_prod .addTit2{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+form .boxMiddle .add_prod .addTit2 span{
+    margin-right: 20px;
+    color: #999;
+}
+form .boxMiddle .add_prod .addTit2 .order{
+    position: relative;
+}
+form .boxMiddle .add_prod .addTit2 .order input{
+    width: 119px; height: 35px;
+    padding-left: 51px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+form .boxMiddle .add_prod .addTit2 .order img{
+    width: 30px; height: auto;
+    position: absolute;
+    right: 0; top: 2px;
+    margin-right: 15px;
+    z-index: 100;
+}
+form .boxMiddle .add_prod .addTit2 .order img.minus{
+    position: absolute;
+    margin-left: 5px;
+    left: 0;
+}
+/* ------- box middle --------- */
+
+.boxBottom{}
+.boxBottom .boxPrice{
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 0 23px 0;
+}
+.boxBottom .boxPrice dt{}
+.boxBottom .boxPrice .price{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.boxBottom .cartBying{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.boxBottom .cartBying .cart{
+    display: flex;
+    width: 200px; height: 38px;
+    background-color: #999;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 12px;
+}
+.boxBottom .cartBying .cart img{
+    width: 14px; height: auto;
+    margin-right: 6px;
+}
+.boxBottom .cartBying .cart p{
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+.boxBottom .cartBying .buying{
+    display: flex;
+    width: 200px; height: 38px;
+    background-color: #98BB67;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.boxBottom .cartBying .buying img{
+    width: auto; height: 14px;
+    margin-right: 6px;
+}
+.boxBottom .cartBying .buying p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.boxBottom .cartBying button .like{
+    position: absolute;
+    right: 0; top: 5px;
+}
+/* -------box bottom------- */
+.deliveryWrap{
+    max-width: 1200px;
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+}
+.delivery{
+    width: 653px; height: 130px;
+    background-color: #eee;
+    border-radius: 20px;
+    margin: 21px 0 76px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 35px;
+}
+    
+.delivery .deliTit{
+    display: flex;
+    align-items: center;
+}
+.delivery .deliTit img{width: auto; height: 22px; margin-right: 10px;}
+.delivery .deliTit>p{font-size: 18px;}
+.delivery .deliTxt{}
+.delivery .deliTxt p{
+    font-size: 14px;
+    font-weight: 300;
+    width: 460px;
+    line-height: 1.5em;
+}
+.delivery .deliTxt p:first-child{
+    padding-bottom: 10px;
+}
+/* --------배송공지--------- */
+
+.using{
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 120px;
+    background-color: #FDF5FF;
+    align-items: center;
+    margin-bottom: 96px;
+}
+.using .usingicon{margin-right: 28px;}
+.using .usingicon img{}
+.using h4{font-size: 18px; font-weight: 600;}
+.using .usingTxt{margin-left: 38px;}
+.using .usingTxt span{
+    line-height: 1.5em;
+    align-items: center;
+}
+.using .usingTxt .checkList{display: flex;}
+.using .usingTxt .checkList img{
+    width: auto; height: 9.17px;
+    padding-right: 10px;
+}
+/* ------------- 시드물 화장품 개봉 후 사용기간 ----------------- */
+
+.gnbTxt{
+    border-bottom: 1px solid #999;
+    padding-bottom: 20px;
+}
+.gnbTxt ul{
+    display: flex;
+    justify-content: center;
+}
+.gnbTxt ul li{margin-right: 150px;}
+.gnbTxt ul li:last-child{
+    margin-right: 0;
+}
+.gnbTxt ul li:hover a{
+    color: #98BB67;
+    font-weight: 500;
+}
+.gnbTxt ul li.on a{
+    color: #98BB67;
+    font-weight: 500;
+}
+
+
+
+/* 상세페이지 */
+
+.detaildePage {
+    margin-top: 62px;
+    text-align: center;
+}
+
+
+/* ----관련상품------ */
+.container .newItem{
+    min-width: 1200px;
+    margin: 160px 0 300px 0; 
+
+}
+
+.container .newItem h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 33px;
+}
+
+.container .newItem>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 67px;
+}
+.container .newItem ul{
+    display: flex;
+    justify-content: center;
+}
+.container .newItem ul li{margin-left: 20px;}
+.container .newItem ul li .new_img{
+    width: 285px; height: auto;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+.container .newItem ul li:first-child .new_img{
+    margin-left: 0;
+}
+.container .newItem ul li .new_img img{
+    width: 100%; height: auto;
+    transition: all 0.3s;
+}
+.container .newItem ul li .new_img:hover img{
+    transform: scale(1.1);
+}
+.container .newItem ul li .new_txt{}
+
+.container .newItem ul li .new_txt .inBox{
+    display: flex;
+    margin: 7px 0 7px 0;
+}
+.container .newItem ul li .new_txt .inBox p{
+    border: 1px solid #98BB67;
+    color: #98BB67;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.container .newItem ul li .new_txt .grayTxt{
+    font-size: 12px;
+    color: #777777;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.container .newItem ul li .new_txt p{
+    font-size: 15px; 
+}
+.container .newItem ul li .new_txt .newTit{
+    margin-bottom: 11px;
+    width: 285px; height: 30px;
+    /* background-color: yellowgreen; */
+}
+.container .newItem ul li .new_txt p span{
+    font-size: 20px; font-weight: 600;
+}
+.container .newItem ul li .new_sale{
+    display: flex;
+    align-items: center; 
+}
+.container .newItem ul li .new_sale p{
+    padding-left: 15px;
+}
+.container .newItem ul li .new_sale p:first-child{
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #98BB67;
+}
+
+.container .newItem ul li .new_sale .salePrice{
+    font-size: 16px; color: #777777;
+    text-decoration-line: line-through;
+}
+.container .newItem .button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -280px;
+}
+.container .newItem .button .left{margin-right: 680px;}
+.container .newItem .button .right{margin-left: 680px;}
