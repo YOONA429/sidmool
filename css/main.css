@@ -1,4 +1,4 @@
-.wrap{min-width: 1300px;
+.wrap{
 position: relative;
 }
 header{height: 233px;
@@ -134,18 +134,22 @@ header nav .gnb2 li:last-child{
     margin-right: 0;
 }
 /* ------header------ */
-
+.swiper-slide a img{
+    width: 100%;
+    background-size: cover;
+}
 .swiper-button-next {
-    color: #dddddd;
+
+    color: #fff;
     margin-right: 220px;
 }
 .swiper-button-prev{
-    color: #dddddd;
+    color: #fff;
     margin-left: 220px;
 }
 /* --------  mainvisual-------- */
 
-.container{}
+.container{min-width: 1200px;}
 .container .newItem{margin-top: 160px;}
 .container .newItem h2>a{
     text-align: center;
@@ -627,7 +631,7 @@ header nav .gnb2 li:last-child{
 /* --------- photoreview --------- */
 
 
-.cont_bottom{}
+.cont_bottom{min-width: 1300px;}
 .cont_bottom .loveWrap{
     position: relative;
     margin-top: 160px;
